@@ -1,0 +1,730 @@
+{
+  "version": "9.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CdkPipelineCodeartifactStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkPipelineCodeartifactStack.template.json"
+      },
+      "metadata": {
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline-repository/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelinerepositoryA6DC8FD8",
+            "trace": [
+              "new Repository (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:348:24)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:19:18)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline-repository/CdkPipelineCodeartifactStackcodeartifactpipeline0207850C-main-EventRule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelinerepositoryCdkPipelineCodeartifactStackcodeartifactpipeline0207850CmainEventRuleA37F7E33",
+            "trace": [
+              "new Rule (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-events/lib/rule.ts:130:22)",
+              "Repository.onEvent (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:157:18)",
+              "Repository.onStateChange (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:171:23)",
+              "Repository.onReferenceUpdated (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:193:23)",
+              "Repository.onCommit (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:239:23)",
+              "CodeCommitSourceAction.bound (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:163:29)",
+              "CodeCommitSourceAction.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:63:17)",
+              "RichAction.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:413:37)",
+              "Stage.attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:336:19)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:320:12)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/JarBuild_CodeArtifact_Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "JarBuildCodeArtifactRole74808B29",
+            "trace": [
+              "new Role (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:24:23)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/JarBuild_CodeArtifact_Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "JarBuildCodeArtifactRoleDefaultPolicyEF28AC19",
+            "trace": [
+              "new Policy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Role.addToPolicy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:376:17)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:28:15)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/JarBuild_CodeArtifact/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "JarBuildCodeArtifact258965F8",
+            "trace": [
+              "new Project (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:854:22)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:36:21)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/JarDeploy_Lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "JarDeployLambdaF5E31001",
+            "trace": [
+              "new Project (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:854:22)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:87:31)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/ArtifactsBucketEncryptionKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineArtifactsBucketEncryptionKey4D2CF7D0",
+            "trace": [
+              "new Key (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-kms/lib/key.ts:427:22)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:261:25)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/ArtifactsBucketEncryptionKeyAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineArtifactsBucketEncryptionKeyAliasD421E49B",
+            "trace": [
+              "new Alias (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-kms/lib/alias.ts:198:22)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:267:9)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineArtifactsBucket0AA96C2E",
+            "trace": [
+              "new Bucket (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1323:22)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:274:21)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineRole78E4DD14",
+            "trace": [
+              "new Role (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:285:31)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineRoleDefaultPolicy70F5D016",
+            "trace": [
+              "new Policy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Function.addToPrincipal (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/grant.ts:168:61)",
+              "Function.addToPrincipalOrResource (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/grant.ts:119:26)",
+              "Bucket.grant (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:723:27)",
+              "Bucket.grantReadWrite (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:647:17)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:301:25)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipeline0D47590A",
+            "trace": [
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:289:26)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/Source_CodeCommit/Source_CodeCommit/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineSourceCodeCommitCodePipelineActionRole5F700700",
+            "trace": [
+              "new Role (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "Pipeline.getRoleForAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:580:20)",
+              "Pipeline._attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:407:29)",
+              "Stage.attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:336:19)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:320:12)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/Source_CodeCommit/Source_CodeCommit/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineSourceCodeCommitCodePipelineActionRoleDefaultPolicyC84C0DF3",
+            "trace": [
+              "new Policy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Function.addToPrincipal (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/grant.ts:168:61)",
+              "Function.addToPrincipalOrResource (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/grant.ts:119:26)",
+              "Bucket.grant (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:723:27)",
+              "Bucket.grantReadWrite (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:647:17)",
+              "CodeCommitSourceAction.bound (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:173:20)",
+              "CodeCommitSourceAction.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:63:17)",
+              "RichAction.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:413:37)",
+              "Stage.attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:336:19)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:320:12)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/EventsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineEventsRoleF6D35D9D",
+            "trace": [
+              "new Role (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "Object.singletonEventRole (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-events-targets/lib/util.ts:21:16)",
+              "CodePipeline.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.ts:32:39)",
+              "Rule.addTarget (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-events/lib/rule.ts:166:32)",
+              "Repository.onEvent (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:162:10)",
+              "Repository.onStateChange (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:171:23)",
+              "Repository.onReferenceUpdated (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:193:23)",
+              "Repository.onCommit (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:239:23)",
+              "CodeCommitSourceAction.bound (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:163:29)",
+              "CodeCommitSourceAction.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:63:17)",
+              "RichAction.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:413:37)",
+              "Stage.attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:336:19)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:320:12)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/EventsRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineEventsRoleDefaultPolicy1AFA4575",
+            "trace": [
+              "new Policy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Role.addToPolicy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:376:17)",
+              "Array.forEach (<anonymous>)",
+              "Object.singletonEventRole (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-events-targets/lib/util.ts:25:20)",
+              "CodePipeline.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.ts:32:39)",
+              "Rule.addTarget (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-events/lib/rule.ts:166:32)",
+              "Repository.onEvent (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:162:10)",
+              "Repository.onStateChange (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:171:23)",
+              "Repository.onReferenceUpdated (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:193:23)",
+              "Repository.onCommit (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:239:23)",
+              "CodeCommitSourceAction.bound (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:163:29)",
+              "CodeCommitSourceAction.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:63:17)",
+              "RichAction.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:413:37)",
+              "Stage.attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:336:19)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:320:12)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/Build_JAR_CodeArtifact/CodeBuild/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineBuildJARCodeArtifactCodeBuildCodePipelineActionRoleB9527A51",
+            "trace": [
+              "new Role (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "Pipeline.getRoleForAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:580:20)",
+              "Pipeline._attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:407:29)",
+              "Stage.attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:336:19)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:320:12)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/Build_JAR_CodeArtifact/CodeBuild/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineBuildJARCodeArtifactCodeBuildCodePipelineActionRoleDefaultPolicyA4EAC447",
+            "trace": [
+              "new Policy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Role.addToPolicy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:376:17)",
+              "CodeBuildAction.bound (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.ts:156:18)",
+              "CodeBuildAction.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:63:17)",
+              "RichAction.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:413:37)",
+              "Stage.attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:336:19)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:320:12)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/Manual_Approval/Approve/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineManualApprovalApproveCodePipelineActionRoleED51C667",
+            "trace": [
+              "new Role (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "Pipeline.getRoleForAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:580:20)",
+              "Pipeline._attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:407:29)",
+              "Stage.attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:336:19)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:320:12)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/Deploy-to-Lambda/CodeBuild/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineDeploytoLambdaCodeBuildCodePipelineActionRole41C0603A",
+            "trace": [
+              "new Role (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "Pipeline.getRoleForAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:580:20)",
+              "Pipeline._attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:407:29)",
+              "Stage.attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:336:19)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:320:12)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/codeartifact-pipeline/Deploy-to-Lambda/CodeBuild/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "codeartifactpipelineDeploytoLambdaCodeBuildCodePipelineActionRoleDefaultPolicy3A3F3ECC",
+            "trace": [
+              "new Policy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Role.addToPolicy (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-iam/lib/role.ts:376:17)",
+              "CodeBuildAction.bound (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.ts:156:18)",
+              "CodeBuildAction.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:63:17)",
+              "RichAction.bind (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:413:37)",
+              "Stage.attachActionToPipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:336:19)",
+              "new Pipeline (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:320:12)",
+              "new CdkPipelineCodeartifactStack (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/lib/cdk-pipeline-codeartifact-stack.ts:151:5)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/bin/cdk-pipeline-codeartifact.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (node:events:485:26)",
+              "process.emit (node:events:378:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineCodeartifactStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (node:events:485:26)",
+              "process.emit (node:events:378:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/ravarana/WORKSPACE/cdk-pipeline-codeartifact/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
