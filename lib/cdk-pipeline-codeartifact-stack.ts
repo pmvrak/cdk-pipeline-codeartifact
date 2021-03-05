@@ -56,8 +56,14 @@ export class CdkPipelineCodeartifactStack extends cdk.Stack {
             commands: [
               'cp settings.xml /root/.m2/settings.xml',
               'cp pom.xml /root/.m2/pom.xml',
-              'echo "Delete previous Artifact Versions from CodeArtifact"',
-              'aws codeartifact delete-package-versions --domain cdkpipelines-codeartifact --domain-owner 008732538448 --repository cdkpipelines-codeartifact-repository --namespace JavaEvents --format maven --package JavaEvents --versions snapshot',
+    /*
+        NOTE : Please COMMENT the below two lines, when you are running the pipeline for the FIRST TIME as the package will not be there 
+        to delete teh FIRST TIME.
+
+        NOTE: Please UN-COMMENT the below two lines in subsequent runs !!
+    */
+       //       'echo "Delete previous Artifact Versions from CodeArtifact"',
+       //       'aws codeartifact delete-package-versions --domain cdkpipelines-codeartifact --domain-owner 008732538448 --repository cdkpipelines-codeartifact-repository --namespace JavaEvents --format maven --package JavaEvents --versions snapshot',
               'mvn -f pom.xml compile',
               'mvn -s settings.xml clean deploy',
             ],
