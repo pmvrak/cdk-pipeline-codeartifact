@@ -49,7 +49,7 @@ export class CdkPipelineCodeartifactStack extends cdk.Stack {
               'pip install awscli',
               'pip install requests',
               'pip install boto3',
-              'export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain cdkpipelines-codeartifact --domain-owner 008732538448 --query authorizationToken --output text`',
+              'export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain cdkpipelines-codeartifact --domain-owner <AWS-ACCOUNT-ID> --query authorizationToken --output text`',
             ],
           },
           build: {
@@ -63,7 +63,7 @@ export class CdkPipelineCodeartifactStack extends cdk.Stack {
         NOTE: Please UN-COMMENT the below two lines in subsequent runs !!
     */
        //       'echo "Delete previous Artifact Versions from CodeArtifact"',
-       //       'aws codeartifact delete-package-versions --domain cdkpipelines-codeartifact --domain-owner 008732538448 --repository cdkpipelines-codeartifact-repository --namespace JavaEvents --format maven --package JavaEvents --versions snapshot',
+       //       'aws codeartifact delete-package-versions --domain cdkpipelines-codeartifact --domain-owner <AWS-ACCOUNT-ID> --repository cdkpipelines-codeartifact-repository --namespace JavaEvents --format maven --package JavaEvents --versions snapshot',
               'mvn -f pom.xml compile',
               'mvn -s settings.xml clean deploy',
             ],
